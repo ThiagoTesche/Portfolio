@@ -3,6 +3,7 @@
   --bg-preto:#121214;
   --roxo-azulado: #5429CF;
   --font-color: #D7D6D6;
+  --azul-claro: #00FFDB;
 }
 
 * {
@@ -35,13 +36,17 @@ header.navbar .menu .nav {
   color: #D7D6D6;
 }
 
-header.navbar .menu .nav .nav-link {
+header.navbar .menu .nav .nav-item {
+  margin: 0 20px;
+}
+
+header.navbar .menu .nav .nav-item .nav-link {
   color: var(--font-color);
   font-weight: 200;
   font-size: 1.5em;
 }
 
-header.navbar .menu .nav .nav-link:hover {
+header.navbar .menu .nav .nav-item .nav-link:hover {
   color: var(--roxo-azulado);
 }
 
@@ -315,7 +320,9 @@ header.navbar .menu .nav .nav-link:hover {
 
 .projects .wrapper .card .card-body {
   color: var(--bg-preto);
-  background-color: #cfccce;
+  background-color: var(--azul-claro);
+  color: #311f1f;
+  text-shadow: #383333;
   border: none;
   border-radius: 5px;
   text-align: center;

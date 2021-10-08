@@ -1,0 +1,381 @@
+:root {
+  --bg-cinza-escuro: #3D3D41;
+  --bg-preto:#121214;
+  --roxo-azulado: #5429CF;
+  --font-color: #D7D6D6;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header.navbar {
+  width: 100%;
+  height: 65px;
+  background-color: var(--bg-cinza-escuro);
+}
+
+header.navbar .menu {
+  margin: 0 auto;
+}
+
+header.navbar .menu .nav {
+  font-family: 'Baloo 2', cursive;
+  color: #D7D6D6;
+}
+
+header.navbar .menu .nav .nav-link {
+  color: var(--font-color);
+  font-weight: 200;
+  font-size: 1.5em;
+}
+
+header.navbar .menu .nav .nav-link:hover {
+  color: var(--roxo-azulado);
+}
+
+.banner {
+  width: 100%;
+  height: 655px;
+  background-color: var(--bg-preto);
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner .leftSide {
+  width: 55%;
+}
+
+.banner .leftSide .text {
+  margin-top: 22%;
+  padding: 30px;
+  margin-left: 30px;
+}
+
+.banner .leftSide .text h1 {
+  font-family: 'Baloo Bhai 2', cursive;
+  color: #D7D6D6;
+  font-size: 3em;
+  line-height: 85px;
+}
+
+.banner .leftSide .text h1 span {
+  color: var(--roxo-azulado);
+}
+
+.banner .leftSide .text button {
+  background-color: var(--roxo-azulado);
+  color: var(--font-color);
+  padding: 2px 40px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 900;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2em;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: 0.2px 1px 1px black;
+          box-shadow: 0.2px 1px 1px black;
+}
+
+.banner .leftSide .text button img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  margin-right: 8px;
+}
+
+.banner .rightSide {
+  width: 45%;
+  margin-right: 20px;
+}
+
+.banner .rightSide img {
+  width: 90%;
+  margin-top: -10px;
+}
+
+.about {
+  width: 100%;
+  height: 700px;
+  padding-top: 30px;
+  background-color: var(--bg-cinza-escuro);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.about .image {
+  width: 50%;
+  height: 100%;
+  padding-top: 6%;
+}
+
+.about .image .bgFundo {
+  width: 420px;
+  border-radius: 50%;
+  height: 380px;
+  background-color: var(--roxo-azulado);
+  z-index: 1;
+  padding-right: 20px;
+  margin-left: 30px;
+}
+
+.about .image .bgFundo img {
+  z-index: 2;
+  margin-left: -10px;
+  margin-top: 48px;
+  width: 150%;
+}
+
+.about .textAbout {
+  width: 50%;
+  height: 100%;
+  font-family: 'Baloo 2', cursive;
+  color: #D7D6D6;
+  padding: 40px;
+  margin-right: 20px;
+  margin-top: 75px;
+}
+
+.about .textAbout h2.title {
+  margin-top: 70px;
+  font-weight: 900;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: #D7D6D6;
+  font-size: 3em;
+}
+
+.about .textAbout p.text {
+  text-align: justify;
+}
+
+.about .textAbout .btns button.btn-linkedin {
+  background-color: var(--roxo-azulado);
+  color: var(--font-color);
+  padding: 2px 40px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 900;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2em;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: 0.2px 1px 1px black;
+          box-shadow: 0.2px 1px 1px black;
+}
+
+.about .textAbout .btns button.btn-linkedin img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 20%;
+  margin-right: 10px;
+}
+
+.about .textAbout .btns button.download-curriculo {
+  background-color: var(--roxo-azulado);
+  color: var(--font-color);
+  padding: 2px 40px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 900;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2em;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: 0.2px 1px 1px black;
+          box-shadow: 0.2px 1px 1px black;
+  margin-left: 20px;
+}
+
+.about .textAbout .btns button.download-curriculo img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 20%;
+  margin-right: 10px;
+}
+
+.skills {
+  width: 100%;
+  height: 760px;
+  background-color: var(--bg-preto);
+  color: var(--font-color);
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 0.5fr 1fr;
+      grid-template-rows: 0.5fr 1fr;
+  -ms-grid-row-align: center;
+      align-self: center;
+  vertical-align: middle;
+}
+
+.skills .box {
+  padding: 0px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.skills .box h3 {
+  color: var(--roxo-azulado);
+  font-weight: 700;
+}
+
+.skills .box h3 span {
+  margin-left: 3px;
+  font-size: 0.7em;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.skills .box ul li {
+  font-size: 0.9em;
+}
+
+.skills .soft-skills {
+  margin-left: 19.5%;
+}
+
+.skills .imageProgrammer {
+  margin-bottom: 40px;
+}
+
+.skills .imageProgrammer img.programmerSkills {
+  width: 100%;
+}
+
+.container-projects {
+  width: 100%;
+  height: 100%;
+  min-height: 570px;
+  background-color: var(--bg-cinza-escuro);
+}
+
+.container-projects h1 {
+  color: var(--font-color);
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.container-projects p.repo {
+  text-align: center;
+  padding-bottom: 40px;
+  margin-bottom: 0px;
+  font-family: 'Baloo Bhai 2', cursive;
+  color: #D7D6D6;
+}
+
+.container-projects p.repo a {
+  text-decoration: none;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+.container-projects p.repo a:hover {
+  color: var(--font-color);
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  padding: 20px;
+}
+
+.projects .wrapper {
+  padding: 20px;
+}
+
+.projects .wrapper .card {
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0.1px 0.1px 1px #575555;
+          box-shadow: 0.1px 0.1px 1px #575555;
+  width: 25em;
+}
+
+.projects .wrapper .card .card-body {
+  color: var(--bg-preto);
+  background-color: #cfccce;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.projects .wrapper .card .card-body button[type=button] {
+  background-color: var(--roxo-azulado);
+  color: var(--font-color);
+  padding: 2px 40px;
+  font-family: 'Baloo 2', cursive;
+  font-weight: 900;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2em;
+  line-height: 40px;
+  cursor: pointer;
+  -webkit-box-shadow: 0.2px 1px 1px black;
+          box-shadow: 0.2px 1px 1px black;
+  padding: 2px 20px;
+  font-size: 1em;
+  line-height: 28px;
+  margin: 0 10px;
+}
+
+.projects .wrapper .card .card-body button[type=button] img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 20%;
+  margin-right: 5px;
+}
+
+.projects .wrapper .card .card-body button[type=button] img.git {
+  width: 30%;
+  margin-right: 5px;
+}
+
+.projects .wrapper .card .card-body button[type=button] a {
+  text-decoration: none;
+  color: var(--font-color);
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--roxo-azulado);
+  height: 100px;
+}
+
+footer .icons {
+  margin: 0 auto;
+  padding-top: 30px;
+  width: 600px;
+  height: 80px;
+  text-align: center;
+}
+
+footer .icons img {
+  -webkit-filter: invert(100%);
+          filter: invert(100%);
+  width: 5%;
+  margin: 0 40px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=main.css.map */

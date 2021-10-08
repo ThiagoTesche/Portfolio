@@ -1,0 +1,32 @@
+:root{
+    --bg-cinza-escuro: #3D3D41;
+    --bg-preto:#121214;
+    --roxo-azulado: #5429CF;
+    --font-color: #D7D6D6;
+}
+
+@mixin fontWeigth700{
+    font-family: 'Baloo Bhai 2', cursive;
+    color: #D7D6D6;
+}
+
+@mixin fontWeight400{
+    font-family: 'Baloo 2', cursive;
+    color: #D7D6D6;
+}
+
+@mixin Button{
+    background-color: var(--roxo-azulado);
+    color: var(--font-color);
+    padding: 2px 40px;
+    font-family: 'Baloo 2', cursive;
+    font-weight: 900;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.2em;
+    line-height: 40px;
+    cursor: pointer;
+    box-shadow: 0.2px 1px 1px black;
+}
+
+$filter: invert(100%);

@@ -13,7 +13,7 @@ $('#open-github-icon').click(function(){
 });
 
 $("#open-instagram-icon").click(function(){
-    window.open("instagram.com/thiago_tesche/");
+    window.open("https://www.instagram.com/thiago_tesche/");
 });
 
 $("#btn-whatsapp-open").click(function(){

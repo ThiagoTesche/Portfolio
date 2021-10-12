@@ -1,0 +1,60 @@
+@media screen and (max-width: 1300px){
+    .projects{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 1135px){
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100%;
+        padding: 20px;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .textAbout{
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+
+            h2.title{
+                text-align: center;
+            }
+
+            p.text{
+                text-align: justify;
+                padding: 0 30px;
+                text-indent: 40px;
+            }
+
+        }
+
+        .image{
+            .bgFundo{
+                margin-left: 0px;
+                margin-bottom: 40px;
+
+                img{
+                    margin-right: 150px;
+                }
+            }
+        }
+
+        .btns{
+            margin-top: 42px;
+        }
+    }
+}
+
+    
+
+@media screen and (max-width: 895px){
+    .projects{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .projects .wrapper{
+        margin: 0 auto;
+    }
+}

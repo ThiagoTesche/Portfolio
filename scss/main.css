@@ -153,7 +153,6 @@ header.navbar .menu .nav .nav-item .nav-link:hover {
   color: #D7D6D6;
   padding: 40px;
   margin-right: 20px;
-  margin-top: 75px;
 }
 
 .about .textAbout h2.title {
@@ -384,5 +383,65 @@ footer .icons img {
   width: 5%;
   margin: 0 40px;
   cursor: pointer;
+}
+
+@media screen and (max-width: 1300px) {
+  .projects {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 1135px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 100%;
+    padding: 20px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .about .textAbout {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  .about .textAbout h2.title {
+    text-align: center;
+  }
+  .about .textAbout p.text {
+    text-align: justify;
+    padding: 0 30px;
+    text-indent: 40px;
+  }
+  .about .image .bgFundo {
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+  .about .image .bgFundo img {
+    margin-right: 150px;
+  }
+  .about .btns {
+    margin-top: 42px;
+  }
+}
+
+@media screen and (max-width: 895px) {
+  .projects {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  .projects .wrapper {
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=main.css.map */

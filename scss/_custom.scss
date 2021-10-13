@@ -71,6 +71,30 @@ header.navbar{
                 }
             }
         }
+
+        .text-responsive{
+            display: none;
+            margin-top: 22%;
+            padding: 30px;
+            margin-left: 30px;
+            h1{
+                @include fontWeigth700;
+                font-size: 3em;
+                line-height: 85px;
+
+                span{
+                    color: var(--roxo-azulado);
+                }
+            }
+
+            button{
+                @include Button;
+                img{
+                    filter: $filter;
+                    margin-right: 8px;
+                }
+            }
+        }
     }
 
     .rightSide{

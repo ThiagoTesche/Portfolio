@@ -141,6 +141,10 @@
 }
 
 @media screen and (max-width: 570px){
+    header.navbar .menu .nav .nav-item {
+        margin: 0px; 
+    }
+
     .about{
         .image{
             margin-left: calc(2 * -30%);
@@ -154,12 +158,6 @@
                 width: 6%;    
             }
         }
-    }
-}
-
-@media screen and (max-width: 570px){
-    header.navbar .menu .nav .nav-item {
-        margin: 0px; 
     }
 }
 
@@ -178,12 +176,53 @@
             }
         }
     }
+
+    .about{
+        .textAbout{
+            p.text{
+                padding: 0px;
+            }
+
+            .btns{
+                
+    
+                button.download-curriculo{
+                    padding: 2px 20px;
+                }
+
+                button.btn-linkedin{
+                    padding: 2px 20px;
+                }
+            }
+        }
+
+        
+    }
     
 }
 
 @media screen and (max-width: 470px){
     header.navbar{
         display: none;
+    }
+
+    .banner{
+        .leftSide{
+            .text{
+                display: none;
+            }
+
+            .text-responsive{
+                display: inline;        
+                h1{
+                    font-size: 2em;
+
+                    span{
+                        font-size: 2.2em;
+                    }
+                }
+            }
+        }
     }
 }
 

@@ -372,7 +372,7 @@ footer {
 footer .icons {
   margin: 0 auto;
   padding-top: 30px;
-  width: 600px;
+  width: 100%;
   height: 80px;
   text-align: center;
 }
@@ -380,7 +380,7 @@ footer .icons {
 footer .icons img {
   -webkit-filter: invert(100%);
           filter: invert(100%);
-  width: 5%;
+  width: 2.5%;
   margin: 0 40px;
   cursor: pointer;
 }
@@ -389,6 +389,9 @@ footer .icons img {
   .projects {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+  footer .icons img {
+    width: 4%;
   }
 }
 
@@ -427,11 +430,71 @@ footer .icons img {
     margin-left: 0px;
     margin-bottom: 40px;
   }
-  .about .image .bgFundo img {
-    margin-right: 150px;
-  }
   .about .btns {
     margin-top: 42px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .banner .rightSide {
+    width: 45%;
+    margin-right: 20px;
+  }
+  .banner .rightSide img {
+    width: 100%;
+    margin-top: 120px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .about .image {
+    margin-left: calc(2 * -15%);
+  }
+  .about .image .bgFundo {
+    margin-left: 0px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .about .image {
+    margin-left: calc(2 * -30%);
+  }
+  .banner {
+    display: block;
+    height: 100%;
+  }
+  .banner .leftSide {
+    margin: 0 auto;
+  }
+  .banner .leftSide .text {
+    margin-top: 0%;
+    padding: 0px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .banner .rightSide {
+    margin: 0 auto;
+    margin-top: -50px;
+  }
+  .about .textAbout .btns button.download-curriculo {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .about .image {
+    margin-left: calc(2 * -30%);
+    display: none;
+  }
+  footer .icons img {
+    width: 6%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  header.navbar .menu .nav .nav-item {
+    margin: 0px;
   }
 }
 

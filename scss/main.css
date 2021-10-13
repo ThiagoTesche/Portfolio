@@ -6,6 +6,11 @@
   --azul-claro: #00FFDB;
 }
 
+button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 * {
   padding: 0;
   margin: 0;

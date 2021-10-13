@@ -220,8 +220,8 @@ header.navbar .menu .nav .nav-item .nav-link:hover {
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: 0.5fr 1fr;
       grid-template-rows: 0.5fr 1fr;
   -ms-grid-row-align: center;
@@ -444,6 +444,11 @@ footer .icons img {
     width: 100%;
     margin-top: 120px;
   }
+  .skills {
+    height: 100%;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 820px) {
@@ -480,6 +485,19 @@ footer .icons img {
   .about .textAbout .btns button.download-curriculo {
     margin-top: 20px;
   }
+  .skills {
+    height: 100%;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: none;
+        grid-template-rows: none;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .skills .box ul li {
+    text-align: left;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (max-width: 570px) {
@@ -495,6 +513,21 @@ footer .icons img {
 @media screen and (max-width: 570px) {
   header.navbar .menu .nav .nav-item {
     margin: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .projects .wrapper .card {
+    width: 100%;
+  }
+  .projects .wrapper .card .card-body button[type=button] {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  header.navbar {
+    display: none;
   }
 }
 
